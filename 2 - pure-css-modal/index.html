@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+
+    <link href="https://fonts.googleapis.com/css?family=Roboto|Lobster" rel="stylesheet">
+
+    <link rel="stylesheet" href="./css/style.css">
+
+    <title>Pure CSS Modal</title>
+</head>
+
+<body>
+    <!-- This is the main page content -->
+    <main>
+        <h1>Pure CSS Modal</h1>
+        <p>
+            This is a pure CSS modal with visibility control
+        </p>
+        <label class="toggle-modal-button" for="modal-visibility-control">
+            Toggle Modal
+        </label>
+    </main>
+
+    <!-- This is the modal -->
+    <div class="modal">
+        <input type="checkbox" name="" id="modal-visibility-control">
+        <div class="modal-content">
+            <div class="modal-header">
+                <h3>Modal title here</h3>
+                <label for="modal-visibility-control">
+                    <span class="close-button">&#x2715</span>
+                </label>
+            </div>
+            <div class="modal-body">
+                <h5>Here is the modal content</h5>
+                <p>
+                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Eaque dolorem nesciunt, ipsum necessitatibus odio deleniti laboriosam
+                    exercitationem quos quo maxime doloremque minima iusto vero consectetur cum laborum recusandae saepe
+                    eligendi.
+                </p>
+            </div>
+            <div class="modal-footer">
+                <label class="toggle-modal-button close-modal-button" for="modal-visibility-control">
+                    Close
+                </label>
+            </div>
+        </div>
+    </div>
+</body>
+
+</html>

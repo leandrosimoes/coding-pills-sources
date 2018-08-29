@@ -1,0 +1,73 @@
+/* Here we'll put our global scoped css variables */
+:root {
+    /* Default theme colors */
+    --default-theme-background-color: #fff;
+    --default-theme-color: #292929;
+
+    /* Dark theme colors */
+    --dark-theme-background-color: #292929;
+    --dark-theme-color: #000;
+
+    /* Sunny theme colors */
+    --sunny-theme-background-color: #cccc00;
+    --sunny-theme-color: #913500;
+
+    /* Commom variables */
+    /* How you can see, we can put another things besides colors inside the variables */
+    --commom-shadow: 0 5px 5px rgba(0,0,0,.2);
+}
+
+html,
+body {
+    /* 
+        Here is an exemple how to use the css variables
+    */
+    background-color: var(--default-theme-background-color);
+    color: var(--default-theme-color);
+    padding: 0;
+    margin: 0;
+    width: 100%;
+    height: 100%;
+    font-family: 'Roboto';
+    overflow: hidden;
+    transition: background-color .3s ease-in-out;
+}
+
+main {
+    position: absolute;
+    width: 50%;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%);
+    text-align: center;
+}
+
+button.theme-button {
+    background-color: transparent;
+    border: none;
+    cursor: pointer;
+    padding: 10px 20px;
+    transition: all .3s ease-in-out;
+    outline: none;
+}
+
+button.theme-button:hover {
+    box-shadow: var(--commom-shadow);
+    transform: translateY(-2px);
+}
+
+main h1 {
+    font-family: 'Lobster';
+    text-shadow: var(--commom-shadow);
+}
+
+body[theme="dark"] {
+    background-color: var(--dark-theme-background-color);
+    color: var(--dark-theme-color);
+    font-family: var(--dark-font-family);
+}
+
+body[theme="sunny"] {
+    background-color: var(--sunny-theme-background-color);
+    color: var(--sunny-theme-color);
+}
