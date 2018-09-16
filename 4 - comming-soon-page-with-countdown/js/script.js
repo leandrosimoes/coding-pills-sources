@@ -1,5 +1,5 @@
 (() => {
-    document.addEventListener("DOMContentLoaded", function () {
+    document.addEventListener("DOMContentLoaded", function() {
         let targetDate = new Date(2019, 0, 1);
         let onStart = () => {
             document.querySelectorAll('.countdown-item').forEach(item => item.classList.add('show'))
